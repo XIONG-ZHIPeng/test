@@ -10,10 +10,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Run Super-linter
-        uses: github/super-linter@v3 # x-release-please-version
+        uses: github/super-linter@v6 # x-release-please-version
         env:
           # To report GitHub Actions status checks
           DEFAULT_BRANCH: main
